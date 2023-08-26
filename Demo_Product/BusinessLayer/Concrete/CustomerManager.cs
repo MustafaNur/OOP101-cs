@@ -33,6 +33,11 @@ namespace BusinessLayer.Concrete
             return _customerdal.GetById(id);
         }
 
+        public List<Customer> TGetList()
+        {
+            return _customerdal.GetList();
+        }
+
         public void TInsert(Customer t)
         {
             _customerdal.Insert(t);

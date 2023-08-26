@@ -18,12 +18,6 @@ namespace BusinessLayer.Concrete
             _productDal = productDal;
         }
 
-        public List<Product> IGetList()
-        {
-            
-            return _productDal.GetList();
-        }
-
         public void TDelete(Product t)
         {
             _productDal.Delete(t);
@@ -34,10 +28,14 @@ namespace BusinessLayer.Concrete
             return _productDal.GetById(id);
         }
 
+        public List<Product> TGetList()
+        {
+            return _productDal.GetList();
+        }
+
         public void TInsert(Product t)
         {
             _productDal.Insert(t);
-            
         }
 
         public void TUpdate(Product t)

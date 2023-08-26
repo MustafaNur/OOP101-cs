@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Demo_Product</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Demo_Product.styles.css" asp-append-version="true" />
+    </head>
+<partial name="~/Views/Partials/Partial_Header.cshtml" />
+<body>  
+    <partial name="~/Views/Partials/Partial_Navbar.cshtml" />
+
+
+<div class="content">
+  @RenderBody()
+</div>
+
+</body>
+</html>

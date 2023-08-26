@@ -33,6 +33,11 @@ namespace BusinessLayer.Concrete
             return _categoryDal.GetById(id);
         }
 
+        public List<Category> TGetList()
+        {
+            return _categoryDal.GetList();
+        }
+
         public void TInsert(Category t)
         {
             _categoryDal.Insert(t);
