@@ -1,0 +1,24 @@
+﻿
+@model EntityLayer.Concrete.Customer
+@{
+    ViewData["Title"] = "AddCustomer";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<h1>Müşteri Ekleme Sayfası</h1>
+<form method="post">
+    @Html.Label("Müşteri Adı")
+    @Html.TextBoxFor(x=>x.Name, new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Name)
+    <br />
+    @Html.Label("Müşteri Şehri")
+    @Html.TextBoxFor(x=>x.City, new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.City)
+    <br />
+    
+    <button class="brn btn-outline-primary">Ürünü Ekle</button>
+</form>
+

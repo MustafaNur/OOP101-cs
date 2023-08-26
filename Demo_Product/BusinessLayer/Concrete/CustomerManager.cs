@@ -35,7 +35,7 @@ namespace BusinessLayer.Concrete
 
         public List<Customer> TGetList()
         {
-            return _customerdal.GetList();
+            return _customerdal.GetList();  
         }
 
         public void TInsert(Customer t)
