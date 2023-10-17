@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<div class="container">
+    <main class="form-signup">
+        <form method="post" class="row g-3">
+            <h1 class="h2 mb-2 fw-normal"> Join our Community</h1>
+
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email: </label>
+                <input type="email" name="name" class="form-control" id="inputEmail4" size="20" maxlength="60" />
+            </div>
+
+            <div class="col-md-6">
+                <label for="newusername" class="form-label">Username: </label>
+                <input type="text" name="surname" class="form-control" id="newusername" size="15" maxlength="20" />
+            </div>
+
+            <div class="col-12">
+                <label for="newpass" class="form-label">New Password: </label>
+                <input type="password" name="password" class="form-control" id="newpass" size="10" maxlength="60" />
+            </div>
+
+            <div class="col-12">
+                <label for="newpass1" class="form-label">Confirm Password: </label>
+                <input type="password" name="password1" size="10" maxlength="20" class="form-control" id="newpass1" />
+            </div>
+
+            <div class="col-12">
+                <button type="submit" name="submitted" class="btn btn-primary">Register!</button>
+            </div>
+
+        </form>
+    </main>
+</div>

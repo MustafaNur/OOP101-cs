@@ -18,6 +18,11 @@ namespace BusinessLayer.Concrete
             _customerdal = customerdal;
         }
 
+        public List<Customer> GetCustomersListWirhJob()
+        {
+            return _customerdal.GetCustomerListWithJob();
+        }
+
         public List<Customer> IGetList()
         {
            return _customerdal.GetList();

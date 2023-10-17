@@ -11,5 +11,7 @@ namespace EntityLayer.Concrete
         public int ID { get; set; }
         public string? Name { get; set; }
         public string? City { get; set; }
+        public int JobID { get; set; }
+        public Job? Job { get; set; }
     }
 }
